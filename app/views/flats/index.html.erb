@@ -4,7 +4,7 @@
   <% @flats.each do |flat| %>
     <div class="card flat-card">
       <div class="card-body">
-        <h5 class="card-title"><%=flat.name%></h5>
+        <h5 class="card-title"><%=flat.name%> <a href=""><i class="fab fa-facebook-f" style="margin-left: 3px;"></i></a>  <a href=""><i class="fab fa-twitter" style="margin-left: 3px;"></i></a>  <a href=""><i class="fab fa-whatsapp-square" style="margin-left: 3px;"></i> </a> </h5>
         <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
         <div class="d-flex justify-content-between">
         <i class="fas fa-users"><%=flat.number_of_guests%></i>
