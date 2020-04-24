@@ -1,0 +1,12 @@
+<h1>Edit</h1>
+  <div class="container">
+  <%= simple_form_for @flat, html: { id: 'simple-form' } do |f| %>
+    <%=f.input :name, disabled: true, hint: 'You are not allowed to change this field.' %>
+    <%=f.input :address %>
+    <%=f.input :description %>
+    <%=f.input :price_per_nigh %>
+    <%=f.input :number_of_guests %>
+    <%= f.button :submit, class: "btn-success" %>
+    <%= link_to 'Cancel', flats_path, class: 'btn btn-secondary' %>
+  <%end%>
+  </div>
